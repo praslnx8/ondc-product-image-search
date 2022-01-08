@@ -14,7 +14,7 @@ class MobilenetClassification {
         this.mobilenetModel = await mobilenet.load({
             version: 2,
             alpha: 1.0,
-            modelUrl: customModelUrl ? `file://${customModelUrl}` : undefined,
+            modelUrl: customModelUrl ? `file://${customModelUrl}` : 'file://res/models/model.json',
         });
         return this.mobilenetModel;
     }
