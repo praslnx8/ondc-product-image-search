@@ -1,7 +1,7 @@
 ## Installation
 
 ```bash
-$ npm install
+$ npm install --python=python2.7
 ```
 
 ## Running the app
@@ -33,6 +33,7 @@ $ npm run test:cov
 To classify the image.
 
 ```bash
-curl --location --request POST 'localhost:3000/image-search' \
+curl --location --request POST 'localhost:4000/image-search' \
 --form 'file=@"/Users/prasi/Desktop/istockphoto-1068482378-612x612.jpg"' 
 ```
+
